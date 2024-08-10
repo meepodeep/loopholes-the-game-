@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Meteor
+  - Grill
+  - Onion
+  - Lettuce
+  - Burger
+  - TopBun
+  - BottomBun
+  - LettuceUncut
+  - Plate
+  - OnionUncut
+  - PlateReal
+  - Icon
+  - Fridge
+  - FoodStack
+  - Soda
+  - SodaTab
+  - CheeseUncut
+  - CheeseCut
+  - PlateIgnore
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Body
+  - Water
+  - UI
+  - LeftHandPhysics
+  - RightHandPhysics
+  - Grabbable
+  - Floor
+  - Plate
+  - Fridge
+  - SodaTab
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
