@@ -1,6 +1,7 @@
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae0076b5ddf7c7327f5578010e8c199c604e212ccf83a575ede438d5c24a84fc
+size 209
 *.unity filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.fbx filter=lfs diff=lfs merge=lfs -text
-* filter=lfs diff=lfs merge=lfs -text
-.blend filter=lfs diff=lfs merge=lfs -text
 *.blend filter=lfs diff=lfs merge=lfs -text
