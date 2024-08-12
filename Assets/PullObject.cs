@@ -21,8 +21,11 @@ public class PullObject : MonoBehaviour
     public ParticleSystem particles; 
     void FixedUpdate()
     {
+       
         bool isGrabButtonPressedPull = grabInputSource.action.ReadValue<float>() > 0.1f;
         if (CurrentObject != null && isGrabButtonPressedPull && grabPhysics.isGrabbing == false){
+            Debug.Log(hand.position - CurrentObject.transform.position);
+            Debug.ClearDeveloperConsole();
             particles.Play();
             lineRenderer.enabled = false;
             CurrentObjectCollider.attachedRigidbody.AddForce((hand.position - CurrentObject.transform.position)* 40f, ForceMode.Force);
@@ -32,8 +35,6 @@ public class PullObject : MonoBehaviour
         // Does the ray intersect any objects excluding the player layer
         if (Physics.Raycast(hand.position, hand.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layersToHit))
         {
-
-
             if (IsGrabbing && isGrabButtonPressedPull && hit.distance >= .5){
             CurrentObject = hit.collider.gameObject;
             CurrentObjectCollider = hit.collider;
