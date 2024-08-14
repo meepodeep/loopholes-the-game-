@@ -24,8 +24,6 @@ public class PullObject : MonoBehaviour
        
         bool isGrabButtonPressedPull = grabInputSource.action.ReadValue<float>() > 0.1f;
         if (CurrentObject != null && isGrabButtonPressedPull && grabPhysics.isGrabbing == false){
-            Debug.Log(hand.position - CurrentObject.transform.position);
-            Debug.ClearDeveloperConsole();
             particles.Play();
             lineRenderer.enabled = false;
             CurrentObjectCollider.attachedRigidbody.AddForce((hand.position - CurrentObject.transform.position)* 40f, ForceMode.Force);
